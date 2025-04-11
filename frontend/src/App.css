@@ -1,0 +1,33 @@
+.app-container {
+  display: grid;
+  grid-template-columns: 450px 1fr 800px;
+  height: 1080px;
+  width: 1920px;
+  margin: 0 auto;
+  background-color: #f5f7fa;
+}
+
+/* Общие стили для панелей */
+.panel {
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
+
+/* Специфичные стили для каждой колонки */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.center-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
