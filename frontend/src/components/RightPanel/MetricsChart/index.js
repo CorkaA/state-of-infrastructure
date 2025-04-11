@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import { useSelector } from 'react-redux';
 import { useGetMetricsQuery } from '../../../features/infrastructureAPI';
+import './styles.css';
 import {
   Chart as ChartJS,
   CategoryScale,

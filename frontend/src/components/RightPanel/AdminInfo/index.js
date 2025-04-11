@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
+import './styles.css';
 
 const AdminInfo = () => {
   const selectedNodeId = useSelector(state => state.infrastructure.selectedNodeId);
   const { data: groups = [] } = useGetGroupsQuery();
 
-  // Находим администратора для выбранной ноды
+  // Поиск администратора для выбранной ноды
   let adminData = null;
   if (selectedNodeId) {
     for (const group of groups) {
@@ -28,11 +29,11 @@ const AdminInfo = () => {
       {adminData ? (
         <div className="admin-details">
           <div className="admin-name">
-            <span className="label">Name:</span>
+            <span className="label">Name: </span>
             <span>{adminData.name}</span>
           </div>
           <div className="admin-email">
-            <span className="label">Email:</span>
+            <span className="label">Email: </span>
             <span>{adminData.email}</span>
           </div>
         </div>

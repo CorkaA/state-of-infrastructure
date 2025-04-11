@@ -1,8 +1,8 @@
 import React from 'react';
-import SystemStatus from './SystemStatus/SystemStatus';
-import GeneralInfo from './GeneralInfo/GeneralInfo';
-import GroupList from './GroupList/GroupList';
-import './LeftPanel.css';
+import SystemStatus from './SystemStatus';
+import GeneralInfo from './GeneralInfo';
+import GroupList from './GroupList';
+import './styles.css';
 
 const LeftPanel = () => {
   return (

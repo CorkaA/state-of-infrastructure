@@ -1,0 +1,13 @@
+.status-section, 
+.info-section, 
+.groups-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.groups-section {
+  flex: 1;
+  overflow-y: auto;
+}

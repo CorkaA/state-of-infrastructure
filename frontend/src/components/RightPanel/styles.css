@@ -1,0 +1,14 @@
+.metrics-section, 
+.interface-section, 
+.admin-section, 
+.apps-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.apps-section {
+    flex: 1;
+    overflow-y: auto;
+}

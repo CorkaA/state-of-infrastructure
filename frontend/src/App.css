@@ -7,27 +7,16 @@
   background-color: #f5f7fa;
 }
 
-/* Общие стили для панелей */
 .panel {
   padding: 20px;
-  border-right: 1px solid #e0e0e0;
   overflow-y: auto;
 }
 
-/* Специфичные стили для каждой колонки */
-.left-panel {
-  display: flex;
-  flex-direction: column;
+.left-panel, .right-panel {  
   gap: 20px;
 }
 
-.center-panel {
+.left-panel, .center-panel, .right-panel {
   display: flex;
   flex-direction: column;
-}
-
-.right-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }

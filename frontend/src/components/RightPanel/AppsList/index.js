@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
+import './styles.css';
 
 const AppsList = () => {
   const selectedNodeId = useSelector(state => state.infrastructure.selectedNodeId);

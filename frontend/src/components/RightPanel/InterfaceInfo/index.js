@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
 import { getStatusColor } from '../../../utils/dataTransformers';
+import './styles.css';
 
 const InterfaceInfo = () => {
   const selectedNodeId = useSelector(state => state.infrastructure.selectedNodeId);
@@ -16,7 +17,7 @@ const InterfaceInfo = () => {
       const groupNodes = Array.isArray(group.nodes) ? group.nodes : [];
       const node = groupNodes.find(n => n.id === selectedNodeId);
       if (node) {
-        // Обрабатываем интерфейс (может быть строкой или объектом)
+        // Обрабатываем интерфейс
         if (node.interface) {
           const interfaceObj = typeof node.interface === 'string' ? 
                              JSON.parse(node.interface) : 
