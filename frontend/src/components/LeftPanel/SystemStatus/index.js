@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useGetNodesQuery } from '../../../features/infrastructureAPI';
+import { useGetNodesQuery } from '../../../api/infrastructureAPI';
 import './styles.css'
 
 const SystemStatus = () => {

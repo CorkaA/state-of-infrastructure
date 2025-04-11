@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectGroup } from '../../../features/infrastructureSlice';
-import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
+import { useGetGroupsQuery } from '../../../api/infrastructureAPI';
 import './styles.css';
 
 const GroupList = () => {

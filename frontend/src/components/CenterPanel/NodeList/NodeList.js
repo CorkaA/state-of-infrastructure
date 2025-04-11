@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectNode } from '../../../features/infrastructureSlice';
-import { useGetNodesQuery } from '../../../features/infrastructureAPI';
+import { useGetNodesQuery } from '../../../api/infrastructureAPI';
 import './styles.css';
 
 const NodeList = () => {

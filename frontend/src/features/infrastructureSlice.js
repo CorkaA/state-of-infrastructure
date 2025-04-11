@@ -60,4 +60,4 @@ export const {
   setError,
 } = infrastructureSlice.actions;
 
-export default infrastructureSlice.reducer;
+export const infrastructureReducer = infrastructureSlice.reducer;

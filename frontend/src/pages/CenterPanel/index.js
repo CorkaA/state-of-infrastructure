@@ -1,5 +1,5 @@
 import React from 'react';
-import NodeList from './NodeList/NodeList';
+import NodeList from '../../components/CenterPanel/NodeList/NodeList';
 import './styles.css';
 
 const CenterPanel = () => {

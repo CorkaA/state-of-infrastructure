@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  useGetGroupsQuery,
-  useGetNodesQuery,
-  useGetMetricsQuery,
-} from '../../features/infrastructureAPI';
+import { useGetGroupsQuery, useGetNodesQuery, useGetMetricsQuery, } from '../../api/infrastructureAPI';
 import { setLoading } from '../../features/infrastructureSlice';
 
 const DataLoader = ({ children }) => {

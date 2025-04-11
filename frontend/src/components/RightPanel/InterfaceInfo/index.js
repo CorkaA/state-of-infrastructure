@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
-import { getStatusColor } from '../../../utils/dataTransformers';
+import { useGetGroupsQuery } from '../../../api/infrastructureAPI';
+import { getStatusColor } from '../../../features/utils/dataTransformers';
 import './styles.css';
 
 const InterfaceInfo = () => {
@@ -36,11 +36,11 @@ const InterfaceInfo = () => {
             <h2>Interface</h2>
             <div className="interface-details">
               <div className="interface-name">
-                <span className="label">Name:</span>
+                <span className="label">Name: </span>
                 <span>{interfaceName}</span>
               </div>
               <div className="interface-status">
-                <span className="label">Status:</span>
+                <span className="label">Status: </span>
                 <span style={{ color: getStatusColor(statusDescription) }}>
                   {statusDescription}
                 </span>

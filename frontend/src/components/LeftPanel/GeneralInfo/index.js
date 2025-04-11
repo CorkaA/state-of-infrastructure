@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
-import { getStatusColor } from '../../../utils/dataTransformers';
+import { useGetGroupsQuery } from '../../../api/infrastructureAPI';
+import { getStatusColor } from '../../../features/utils/dataTransformers';
 import './styles.css'
 
 const GeneralInfo = () => {

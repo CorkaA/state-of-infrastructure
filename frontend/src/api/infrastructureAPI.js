@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { transformGroupsData, transformNodesData } from '../utils/dataTransformers';
+import { transformGroupsData, transformNodesData } from '../features/utils/dataTransformers';
 
 export const infrastructureApi = createApi({
   reducerPath: 'infrastructureApi',

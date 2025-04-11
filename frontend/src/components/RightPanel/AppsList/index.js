@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useGetGroupsQuery } from '../../../features/infrastructureAPI';
+import { useGetGroupsQuery } from '../../../api/infrastructureAPI';
 import './styles.css';
 
 const AppsList = () => {
